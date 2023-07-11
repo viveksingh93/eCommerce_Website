@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\MyWeb.csproj": {}
+    "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\MyWeb.csproj": {}
   },
   "projects": {
-    "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj": {
+    "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj",
         "projectName": "myWeb.DataAccessLayer",
-        "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj",
+        "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\vivek.kushwaha\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\obj\\",
+        "outputPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj": {
-                "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj"
+              "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj": {
+                "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj": {
+    "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj",
+        "projectUniqueName": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj",
         "projectName": "myWeb.Models",
-        "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj",
+        "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj",
         "packagesPath": "C:\\Users\\vivek.kushwaha\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\obj\\",
+        "outputPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +138,14 @@
         }
       }
     },
-    "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\MyWeb.csproj": {
+    "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\MyWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\MyWeb.csproj",
+        "projectUniqueName": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\MyWeb.csproj",
         "projectName": "MyWeb",
-        "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\MyWeb.csproj",
+        "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\MyWeb.csproj",
         "packagesPath": "C:\\Users\\vivek.kushwaha\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\obj\\",
+        "outputPath": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -165,11 +165,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj": {
-                "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj"
+              "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj": {
+                "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.DataAccessLayer\\myWeb.DataAccessLayer.csproj"
               },
-              "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj": {
-                "projectPath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj"
+              "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj": {
+                "projectPath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj"
               }
             }
           }

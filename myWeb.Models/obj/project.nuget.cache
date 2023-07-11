@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q5ulX13hDiTLvKQJx19WpxakZL84iZ24ziAOmjq1HsLHC9y1kRkiwPaL0vc/blYIfMi9tcFvdAlCzwE+7CgnZA==",
+  "dgSpecHash": "1PQ7MfUsCFn1PkXT8EHxXw663PUIpF2FeXwey8pB/m0HD6PEg5+FFd891GjuzqFk2O0mD5jY1ho1+577l80Ilg==",
   "success": true,
-  "projectFilePath": "D:\\Angular_Work\\Practice\\MyWeb\\myWeb.Models\\myWeb.Models.csproj",
+  "projectFilePath": "D:\\Angular_Work\\Practice\\ECommerce\\myWeb.Models\\myWeb.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

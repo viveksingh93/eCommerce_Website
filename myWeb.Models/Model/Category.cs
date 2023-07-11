@@ -11,9 +11,8 @@ namespace myWeb.Models.Model
     {
         [Key]
         public int Id { get; set; }
-
         [Required(ErrorMessage = "Please enter a Category name.")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int DisplayOrder { get; set; }
         public DateTime createdDateTime { get; set; } = DateTime.Now;
     }

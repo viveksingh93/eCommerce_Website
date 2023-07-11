@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g/coDtb1/W+6OKsaqZsCmWBv/GW+RZbQozlVWgnZvj8wLahZr/si4Zq4Q+XElbqbRUyqw7cuKv+46dtxuBUd9Q==",
+  "dgSpecHash": "nNg9+SnoiKVsxVDwTtA3bpBFfX7BPSIlAK1RyAm0D9FH5JdDLBL1+Pj1+bPw8QQC3hgkqNwEizBR3VwiEM8Rag==",
   "success": true,
-  "projectFilePath": "D:\\Angular_Work\\Practice\\MyWeb\\MyWeb\\MyWeb.csproj",
+  "projectFilePath": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\MyWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vivek.kushwaha\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\vivek.kushwaha\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

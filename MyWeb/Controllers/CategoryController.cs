@@ -99,7 +99,7 @@ namespace MyWeb.Controllers
             }
             _context.Categories.Remove(category);
             _context.SaveChanges();
-            TempData["success"] = "Category is Delete successfully";
+            TempData["error"] = "Category is Delete successfully";
             return RedirectToAction("Index");
         }
 
