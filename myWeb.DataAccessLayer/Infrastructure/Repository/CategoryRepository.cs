@@ -17,6 +17,7 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 		{
 			_context = context;
 		}
+
 		public void Update(Category category)
 		{
 			_context.Categories.Update(category);
