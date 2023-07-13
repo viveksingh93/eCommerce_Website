@@ -1,0 +1,111 @@
+﻿@model myWeb.Models.ViewModels.ProductVM
+
+<form method="post" asp-action="CreateUpdate" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Product.Id" />
+    <input type="hidden" asp-for="Product.ImageUrl" />
+    <div class="container Vh-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-9">
+                <div class="" style="border-radius: 15px;">
+                    <div class="card-body">
+                        <h2 class="mb-0">@((Model.Product == null || Model.Product.Id == 0) ? "Create" : "Update") Product</h2>
+                        <hr class="mx-n3">
+                        <div class="row align-items-center pt-4 pb-3">
+                            <div asp-validation-summary="All"></div>
+                            <div class="col-md-3 ps-5">
+                               @* <h6 class="mb-0">Full name</h6>*@
+                                <label class="mb-0" asp-for="Product.Name"></label>
+                            </div>
+                            <div class="col-md-9 pe-5">
+                               
+                                <input asp-for="Product.Name" class="form-control form-control w-50" />
+                                <span asp-validation-for="Product.Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+                               @* <h6 class="mb-0">Display Order</h6>*@
+                                <label class="mb-0" asp-for="Product.Description"></label>
+                            </div>
+                            <div class="col-md-9 pe-5">
+                                
+                                <textarea asp-for="Product.Description" class="form-control form-control w-50"></textarea>
+                                <span asp-validation-for="Product.Description" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+                                <label class="mb-0" asp-for="Product.Price"></label>
+                            </div>
+                            <div class="col-md-9 pe-5">
+                                <input asp-for="Product.Price" class="form-control form-control w-50" />
+                                <span asp-validation-for="Product.Price" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+                                <label class="mb-0" asp-for="Product.ImageUrl"></label>
+                            </div>
+                            <div class="col-md-9 pe-5">
+                                <input id="ImageFile" type="file" name="file" asp-for="Product.ImageUrl" class="form-control form-control w-50" />
+                               
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-md-3 ps-5">
+                                <label class="mb-0" asp-for="Product.CategoryId"></label>
+                            </div>
+                            <div class="col-md-9 pe-5">
+                                <select asp-items="Model.Categories" asp-for="Product.CategoryId" class="form-control form-control w-50">
+                                    <option selected disabled class="text-center"> --Select Category--</option>
+
+
+                                </select>
+                                <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="buttonC">
+                            @if (Model.Product == null || Model.Product.Id == 0)
+                            {
+                                <button type="submit" onclick="return ValidateEmpty()" class="btn btn-primary align-content-end">Create</button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-primary align-content-end">Update</button>
+                            }
+                        </div>
+                        <hr class="mx-n3">
+                        <a asp-action="Index" asp-controller="Product">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+<style>
+    .buttonC {
+        padding-left: 31rem;
+    }
+</style>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        function ValidateEmpty(){
+            if (document.getElementById("ImageFile").value=="")
+            {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Upload Image!',
+                   
+                })
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

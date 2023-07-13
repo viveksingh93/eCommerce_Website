@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using myWeb.DataAccessLayer.Data;
 using myWeb.DataAccessLayer.Infrastructure.IRepository;
 using System;
@@ -21,6 +20,7 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 		public Repository(ApplicationDbContext context)
 		{
 			_context = context;
+			//_context.Products.Include(x => x.Category);
 			_dbSet = _context.Set<T>();
 		}
 
@@ -38,14 +38,33 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 			_dbSet.RemoveRange(entity);
 		}
 
-		public IQueryable<T> GetAll()
+		public IEnumerable<T> GetAll(string? includeProperties = null)
 		{
-			return (IQueryable<T>)_dbSet.ToList();
+			//return _dbSet.ToList();
+
+			IQueryable<T> query = _dbSet;
+			if (includeProperties != null)
+			{
+				foreach (var item in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries)) 
+				{
+					query = query.Include(item);
+				}
+			}
+			return query.ToList();
 		}
 
-		public T GetT(Expression<Func<T, bool>> predicate)
+		public T GetT(Expression<Func<T, bool>> predicate, string? includeProperties = null)
 		{
-			return _dbSet.Where(predicate).FirstOrDefault();
+			IQueryable<T> query = _dbSet;
+            query= query.Where(predicate);
+            if (includeProperties != null)
+            {
+                foreach (var item in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(item);
+                }
+            }
+            return query.FirstOrDefault();
 		}
 	}
 }

@@ -2,9 +2,10 @@
 using myWeb.Models.Model;
 using System.Diagnostics;
 
-namespace MyWeb.Controllers
+namespace MyWeb.Areas.Customer.Controllers
 {
-    public class HomeController : Controller
+	[Area("Customer")]
+	public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 

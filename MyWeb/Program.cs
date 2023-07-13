@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using myWeb.DataAccessLayer.Data;
+using myWeb.DataAccessLayer.Infrastructure.IRepository;
+using myWeb.DataAccessLayer.Infrastructure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(Options =>
 {
@@ -31,6 +33,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

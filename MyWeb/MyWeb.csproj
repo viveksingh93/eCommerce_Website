@@ -22,4 +22,9 @@
     <ProjectReference Include="..\myWeb.Models\myWeb.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\ProductImage\" />
+  </ItemGroup>
+
 </Project>
