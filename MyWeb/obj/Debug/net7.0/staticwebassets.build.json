@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3vTnhEx/Hjgl0VIyyTrYfitZz+d0umzot93lp9Aw3uU=",
+  "Hash": "C00j/7yV28vvPnJb2lfcmtt359nIepAmlAOXaksUbv0=",
   "Source": "MyWeb",
   "BasePath": "_content/MyWeb",
   "Mode": "Default",
@@ -1120,23 +1120,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductImage\\73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg"
-    },
-    {
-      "Identity": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\ProductImage\\7bad4a0c-929c-45d5-94a0-8da5dbed1f12-redCar.jpg",
-      "SourceId": "MyWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\",
-      "BasePath": "_content/MyWeb",
-      "RelativePath": "ProductImage/7bad4a0c-929c-45d5-94a0-8da5dbed1f12-redCar.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImage\\7bad4a0c-929c-45d5-94a0-8da5dbed1f12-redCar.jpg"
     },
     {
       "Identity": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\ProductImage\\ff551351-c1da-4628-a8a8-c0d14804312f-p_Bill.jpeg",

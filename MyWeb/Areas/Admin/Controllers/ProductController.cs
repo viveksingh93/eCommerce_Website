@@ -26,7 +26,9 @@ namespace MyWeb.Areas.Admin.Controllers
         public IActionResult AllProduct()
         {
             var product = _unitofwork.Product.GetAll(includeProperties:"Category");
-            return Json(new {data=product});
+            return Json(new {
+                data=product
+            });
         }
 
         #endregion
