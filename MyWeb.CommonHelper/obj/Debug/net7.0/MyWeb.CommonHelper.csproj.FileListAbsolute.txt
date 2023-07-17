@@ -1,0 +1,12 @@
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\bin\Debug\net7.0\MyWeb.CommonHelper.deps.json
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\bin\Debug\net7.0\MyWeb.CommonHelper.dll
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\bin\Debug\net7.0\MyWeb.CommonHelper.pdb
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.csproj.AssemblyReference.cache
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.AssemblyInfoInputs.cache
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.AssemblyInfo.cs
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.csproj.CoreCompileInputs.cache
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.dll
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\refint\MyWeb.CommonHelper.dll
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\MyWeb.CommonHelper.pdb
+D:\Angular_Work\Practice\ECommerce\MyWeb.CommonHelper\obj\Debug\net7.0\ref\MyWeb.CommonHelper.dll

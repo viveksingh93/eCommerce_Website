@@ -1,18 +1,35 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using myWeb.DataAccessLayer.Data;
 using myWeb.DataAccessLayer.Infrastructure.IRepository;
 using myWeb.DataAccessLayer.Infrastructure.Repository;
+using Microsoft.Extensions.Configuration;
+using System.Security.Principal;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using MyWeb.CommonHelper;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(); 
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 
-builder.Services.AddDbContext<ApplicationDbContext>(Options =>
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
+builder.Services.ConfigureApplicationCookie(options =>
 {
-    Options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+    options.LoginPath = "/Identity/Account/Login";
+    options.LogoutPath = "/Identity/Account/Logout";
 });
+
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -28,9 +45,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
