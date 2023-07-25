@@ -19,15 +19,20 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 
         public IApplicationUser ApplicationUser { get; private set; }
 
-        public UnitOfWork(ApplicationDbContext context)  
+        public IOrderHeaderRepository OrderHeader { get; private set; }
+
+        public IOrderDetailRepository OrderDetail { get; private set; }
+
+        public UnitOfWork(ApplicationDbContext context)
 		{
 			_context = context;
 			Category = new CategoryRepository(context);
 			Product = new ProductRepository(context);
             Cart = new CartRepository(context);
             ApplicationUser = new ApplicationUserRepository(context);
-		}
-		
+            OrderHeader= new OrderHeaderRepository(context);
+            OrderDetail = new OrderDetailRepository(context);
+        }
 		public void Save()
 		{
 			_context.SaveChanges();

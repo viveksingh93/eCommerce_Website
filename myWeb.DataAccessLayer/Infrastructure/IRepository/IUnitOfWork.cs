@@ -12,6 +12,8 @@ namespace myWeb.DataAccessLayer.Infrastructure.IRepository
 		IProductRepository Product { get; }
 		ICartRepository Cart { get; }
 		IApplicationUser ApplicationUser { get; }
-		void Save();
+        IOrderHeaderRepository OrderHeader { get; }
+        IOrderDetailRepository OrderDetail { get; }
+        void Save();
 	}
 }

@@ -24,5 +24,10 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
             cart.count += count;
             return cart.count;
         }
+        public int DecrementCartItem(Cart cart, int count)
+        {
+            cart.count -= count;
+            return cart.count;
+        }
     }
 }

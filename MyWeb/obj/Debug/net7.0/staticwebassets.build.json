@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/TAAjRCYgv/TuosqXbnLJvwhV3QDbgh3PF0ufKc4Xhc=",
+  "Hash": "tYxb7XDAp2S1nIRp46RvmZz8xT0yxuRBdijAeLuTwAg=",
   "Source": "MyWeb",
   "BasePath": "_content/MyWeb",
   "Mode": "Default",
@@ -2125,12 +2125,12 @@
       "OriginalItemSpec": "wwwroot\\ProductImage\\48f4de55-4645-4d54-9b12-8043a41d5bda-redCar.jpg"
     },
     {
-      "Identity": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\ProductImage\\73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg",
+      "Identity": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\ProductImage\\53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg",
       "SourceId": "MyWeb",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\",
       "BasePath": "_content/MyWeb",
-      "RelativePath": "ProductImage/73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg",
+      "RelativePath": "ProductImage/53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2139,7 +2139,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ProductImage\\73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg"
+      "OriginalItemSpec": "wwwroot\\ProductImage\\53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg"
     },
     {
       "Identity": "D:\\Angular_Work\\Practice\\ECommerce\\MyWeb\\wwwroot\\ProductImage\\eae71f5e-eebf-49e0-9a44-3da6c9434413-redCar.jpg",

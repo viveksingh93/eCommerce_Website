@@ -1008,12 +1008,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\48f4de55-4645-4d54-9b12-8043a41d5bda-redCar.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyWeb</BasePath>
-      <RelativePath>ProductImage/73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg</RelativePath>
+      <RelativePath>ProductImage/53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1022,7 +1022,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\73b6d72e-1684-4dbd-ba01-24030bccd7fe-redCar.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\53ba8c71-0f8b-48ea-add6-aa29dfcdc666-black_shirt.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImage\eae71f5e-eebf-49e0-9a44-3da6c9434413-redCar.jpg))">
       <SourceType>Package</SourceType>

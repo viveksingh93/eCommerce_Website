@@ -23,7 +23,6 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 			//_context.Products.Include(x => x.Category);
 			_dbSet = _context.Set<T>();
 		}
-
 		public void Add(T entity)
 		{
 			_dbSet.Add(entity);
@@ -38,10 +37,9 @@ namespace myWeb.DataAccessLayer.Infrastructure.Repository
 			_dbSet.RemoveRange(entity);
 		}
 
-		public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate=null, string? includeProperties = null)
+		public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate = null, string? includeProperties = null)
 		{
-			//return _dbSet.ToList();
-
+			
 			IQueryable<T> query = _dbSet;
 			if(predicate != null)
 			{
